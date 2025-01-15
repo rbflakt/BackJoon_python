@@ -18,8 +18,12 @@ def find():
       return False
 
   for k in range(N,10**7):
-    if is_prime(k) and pal(k):
-      return k
+    if k>98689:
+      return 1003001
       break
+    else:
+      if is_prime(k) and pal(k):
+        return k
+        break
 
 print(find()) 
